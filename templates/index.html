@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}Home | SmartBuild Planner{% endblock %}
+
+{% block content %}
+<div class="text-center">
+    <h1 class="mb-3">Welcome to SmartBuild Planner</h1>
+    <p class="lead">
+        Generate automated building plans with cost estimation and PDF reports.
+    </p>
+
+    <a href="{{ url_for('planner.create_plan') }}" class="btn btn-primary mt-3">
+        Create Building Plan
+    </a>
+</div>
+{% endblock %}
