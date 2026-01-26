@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}Plan Result{% endblock %}
+
+{% block content %}
+<div class="card shadow">
+    <div class="card-body">
+        <h3 class="mb-3">Building Plan Summary</h3>
+
+        <p><strong>Total Area:</strong> {{ total_area }} sq.ft</p>
+        <p><strong>Estimated Cost:</strong> ₹{{ estimated_cost }}</p>
+        <p><strong>Status:</strong> {{ status }}</p>
+
+        <h5 class="mt-4">Rooms</h5>
+        <ul>
+            {% for room in rooms %}
+                <li>{{ room.name }} - {{ room.size }}</li>
+            {% endfor %}
+        </ul>
+
+        <a href="{{ pdf_path }}" class="btn btn-success mt-3" download>
+            Download Building Plan (PDF)
+        </a>
+
+        <a href="{{ url_for('planner.create_plan') }}" class="btn btn-secondary mt-3">
+            Generate Another Plan
+        </a>
+
+    </div>
+</div>
+{% endblock %}
