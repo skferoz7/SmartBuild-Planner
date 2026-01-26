@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block title %}Create Building Plan{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card shadow">
+            <div class="card-body">
+                <h3 class="text-center mb-4">Create Building Plan</h3>
+
+                <form method="POST">
+                    <div class="mb-3">
+                        <label class="form-label">Plot Length (ft)</label>
+                        <input type="number" name="length" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Plot Width (ft)</label>
+                        <input type="number" name="width" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Number of Floors</label>
+                        <input type="number" name="floors" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Number of Bedrooms</label>
+                        <input type="number" name="bedrooms" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Budget (₹)</label>
+                        <input type="number" name="budget" class="form-control" required>
+                    </div>
+
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">
+                            Generate Plan
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
