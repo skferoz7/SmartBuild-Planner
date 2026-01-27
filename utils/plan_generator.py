@@ -3,21 +3,12 @@ def generate_plan(length, width, floors, bedrooms):
 
     rooms = []
 
-    # Hall
-    rooms.append({
-        "name": "Hall",
-        "size": "15 x 12 ft"
-    })
+    rooms.append({"name": "Hall", "size": "15x12"})
 
-    # Bedrooms
-    for i in range(1, bedrooms + 1):
-        rooms.append({
-            "name": f"Bedroom {i}",
-            "size": "12 x 10 ft"
-        })
+    for i in range(bedrooms):
+        rooms.append({"name": f"Bedroom {i+1}", "size": "12x10"})
 
-    # Kitchen & Bathroom
-    rooms.append({"name": "Kitchen", "size": "10 x 8 ft"})
-    rooms.append({"name": "Bathroom", "size": "8 x 6 ft"})
+    rooms.append({"name": "Kitchen", "size": "10x8"})
+    rooms.append({"name": "Bathroom", "size": "8x6"})
 
     return total_area, rooms
