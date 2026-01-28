@@ -75,7 +75,7 @@ def create_plan():
         os.makedirs("static/pdfs", exist_ok=True)
 
         #  GENERATE FLOOR PLAN IMAGE
-        timestamp = int(time.time())
+        timestamp = int(time.time() * 1000)
         image_path = f"static/images/floor_plan_{timestamp}.png"
 
         draw_floor_plan(
