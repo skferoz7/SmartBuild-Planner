@@ -1,48 +1,49 @@
 {% extends "layout.html" %}
-
-{% block title %}Create Building Plan{% endblock %}
-
 {% block content %}
+
 <div class="row justify-content-center">
-    <div class="col-md-6">
-        <div class="card shadow">
-            <div class="card-body">
-                <h3 class="text-center mb-4">Create Building Plan</h3>
+  <div class="col-md-6">
+    <div class="card shadow">
+      <div class="card-header bg-primary text-white">
+        <h5 class="mb-0">Building Details</h5>
+      </div>
 
-                <form method="POST">
-                    <div class="mb-3">
-                        <label class="form-label">Plot Length (ft)</label>
-                        <input type="number" name="length" class="form-control" required>
-                    </div>
+      <div class="card-body">
+        <form method="POST">
 
-                    <div class="mb-3">
-                        <label class="form-label">Plot Width (ft)</label>
-                        <input type="number" name="width" class="form-control" required>
-                    </div>
+          <div class="mb-3">
+            <label>Plot Length (ft)</label>
+            <input type="number" class="form-control" name="length" required>
+          </div>
 
-                    <div class="mb-3">
-                        <label class="form-label">Number of Floors</label>
-                        <input type="number" name="floors" class="form-control" required>
-                    </div>
+          <div class="mb-3">
+            <label>Plot Width (ft)</label>
+            <input type="number" class="form-control" name="width" required>
+          </div>
 
-                    <div class="mb-3">
-                        <label class="form-label">Number of Bedrooms</label>
-                        <input type="number" name="bedrooms" class="form-control" required>
-                    </div>
+          <div class="mb-3">
+            <label>Floors</label>
+            <input type="number" class="form-control" name="floors" required>
+          </div>
 
-                    <div class="mb-3">
-                        <label class="form-label">Budget (₹)</label>
-                        <input type="number" name="budget" class="form-control" required>
-                    </div>
+          <div class="mb-3">
+            <label>Bedrooms</label>
+            <input type="number" class="form-control" name="bedrooms" required>
+          </div>
 
-                     <button type="submit" class="btn btn-primary w-100">
-                        Generate Building Plan
-                    </button>
-                    
-                </form>
+          <div class="mb-3">
+            <label>Budget (₹)</label>
+            <input type="number" class="form-control" name="budget" required>
+          </div>
 
-            </div>
-        </div>
+          <button class="btn btn-success w-100">
+            <i class="bi bi-magic"></i> Generate Plan
+          </button>
+
+        </form>
+      </div>
     </div>
+  </div>
 </div>
+
 {% endblock %}
