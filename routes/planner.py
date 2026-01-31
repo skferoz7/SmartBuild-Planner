@@ -82,7 +82,8 @@ def create_plan():
             rooms_data,
             image_path,
             length,
-            width
+            width,
+            bedrooms
         )
 
     
