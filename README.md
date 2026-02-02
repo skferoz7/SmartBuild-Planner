@@ -91,6 +91,7 @@ git clone https://github.com/your-username/SmartBuild-Planner.git
 cd SmartBuild-Planner
 ```
 # Step-2: Create Virtual Environment
+windows
 ```
 python -m venv construction
 ```
@@ -101,6 +102,7 @@ Windows
 construction\Scripts\activate
 ```
 # Run the Application
+windows
 ```
 python app.py
 ```
@@ -170,7 +172,9 @@ Manual architect validation is required for real construction
 # Author
 
 Shaik Feroz
+
 📍 Hyderabad, India
+
 📧 Email: ferozzz0655@gmail.com
 
 🔗 LinkedIn: https://www.linkedin.com/in/feroz-shaik-9b228a25b/
