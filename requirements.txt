@@ -1,1 +1,7 @@
-Flask
+Flask>=3.0
+gunicorn
+Flask_SQLAlchemy
+matplotlib
+reportlab
+numpy
+Pillow
